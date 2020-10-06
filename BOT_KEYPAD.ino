@@ -3,7 +3,10 @@
 
 const byte row=4;
 const byte column=4;
-char key[row][column]={{'1', '2', '3','U'}, {'4', '5', '6', 'D'}, {'7', '8', '9', 'R'}, {'*', '0', 'S', 'L'}};
+char key[row][column]={{'1', '2', '3','U'}, 
+                       {'4', '5', '6', 'D'}, 
+                       {'7', '8', '9', 'R'}, 
+                       {'*', '0', 'S', 'L'}};
 byte rowPins[row]={2, 3, 4, 5};
 byte colPins[column]={0,0 ,11,6};
 Keypad keypad=Keypad(makeKeymap(key), rowPins, colPins, row, column);
